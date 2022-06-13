@@ -1,0 +1,7 @@
+{
+   "editor.tabSize": 3,
+   "files.exclude": {
+      ".vscode": true
+   },
+   "files.insertFinalNewline": true
+}

@@ -1,0 +1,11 @@
+{
+   "name": "@leptonite/eslint-config",
+   "version": "0.0.0",
+   "main": "index.js",
+   "license": "MIT",
+   "peerDependencies": {
+      "@typescript-eslint/eslint-plugin": "5.28.0",
+      "@typescript-eslint/parser": "5.28.0",
+      "eslint": "8.17.0"
+   }
+}
