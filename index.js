@@ -59,6 +59,7 @@ module.exports = {
 
       // ESLint Layout & Formatting
       'array-element-newline': ['error', 'consistent'],
+      'arrow-parens': ['error', 'as-needed'],
       'comma-dangle': 'off', // extended by @typescript-eslint/comma-dangle
       'function-call-argument-newline': ['error', 'consistent'],
       'function-paren-newline': ['error', 'consistent'],
