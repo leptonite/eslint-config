@@ -46,6 +46,14 @@ module.exports = {
       'multiline-comment-style': 'off',
       'no-inline-comments': 'off',
       'no-magic-numbers': 'off', // extended by @typescript-eslint/no-magic-numbers
+      'no-mixed-operators': ['error', {
+         'groups': [
+            ['&', '|', '^', '~', '<<', '>>', '>>>'],
+            ['==', '!=', '===', '!==', '>', '>=', '<', '<='],
+            ['in', 'instanceof'],
+         ],
+         'allowSamePrecedence': true,
+      }],
       'no-plusplus': 'off',
       'no-return-await': 'off', // extended by @typescript-eslint/return-await
       'no-ternary': 'off',
@@ -54,7 +62,7 @@ module.exports = {
       'prefer-destructuring': 'off',
       'prefer-template': 'off',
       'quote-props': 'off',
-      'sort-imports': ['error', { allowSeparatedGroups: true }],
+      'sort-imports': ['error', { ignoreCase: true, allowSeparatedGroups: true }],
       'sort-keys': 'off',
 
       // ESLint Layout & Formatting
@@ -86,7 +94,7 @@ module.exports = {
       '@typescript-eslint/no-type-alias': 'off',
       '@typescript-eslint/no-use-before-define': ['error', { functions: false, classes: true, variables: true, enums: true, typedefs: false, ignoreTypeReferences: false }],
       '@typescript-eslint/object-curly-spacing': ['error', 'always'],
-      '@typescript-eslint/parameter-properties': ['error', { "prefer": "parameter-property" }],
+      '@typescript-eslint/parameter-properties': ['error', { 'prefer': 'parameter-property' }],
       '@typescript-eslint/prefer-readonly-parameter-types': 'off',
       '@typescript-eslint/quotes': ['error', 'single'],
       '@typescript-eslint/restrict-template-expressions': 'off',
