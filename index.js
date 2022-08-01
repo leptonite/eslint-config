@@ -14,6 +14,10 @@ const namingConvention = [
       selector: 'typeLike',
       format: ['PascalCase'],
    },
+   {
+      selector: 'enumMember',
+      format: ['PascalCase'],
+   },
 ];
 
 module.exports = {
@@ -33,6 +37,7 @@ module.exports = {
 
       // ESLint Suggestions
       'capitalized-comments': 'off',
+      'class-methods-use-this': 'off',
       'complexity': 'off',
       'func-style': ['error', 'declaration', { allowArrowFunctions: true }],
       'guard-for-in': 'off',
@@ -88,10 +93,13 @@ module.exports = {
       '@typescript-eslint/consistent-indexed-object-style': 'off',
       '@typescript-eslint/indent': 'off', // rule is broken, see https://github.com/typescript-eslint/typescript-eslint/issues/1824
       '@typescript-eslint/init-declarations': 'off',
+      '@typescript-eslint/lines-between-class-members': 'off',
       '@typescript-eslint/naming-convention': namingConvention,
       '@typescript-eslint/no-magic-numbers': 'off',
+      '@typescript-eslint/no-non-null-assertion': 'off',
       '@typescript-eslint/no-parameter-properties': 'off',
       '@typescript-eslint/no-type-alias': 'off',
+      '@typescript-eslint/no-unused-vars': ['error', { vars: 'all', args: 'all', ignoreRestSiblings: false, argsIgnorePattern: '^_' }],
       '@typescript-eslint/no-use-before-define': ['error', { functions: false, classes: true, variables: true, enums: true, typedefs: false, ignoreTypeReferences: false }],
       '@typescript-eslint/object-curly-spacing': ['error', 'always'],
       '@typescript-eslint/parameter-properties': ['error', { 'prefer': 'parameter-property' }],
