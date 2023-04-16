@@ -7,9 +7,9 @@ Merge this into your `package.json`:
 {
    "devDependencies": {
       "@leptonite/eslint-config": "git+https://github.com/leptonite/eslint-config.git",
-      "@typescript-eslint/eslint-plugin": "5.31.0",
-      "@typescript-eslint/parser": "5.31.0",
-      "eslint": "8.20.0"
+      "@typescript-eslint/eslint-plugin": "5.58.0",
+      "@typescript-eslint/parser": "5.58.0",
+      "eslint": "8.38.0"
    }
 }
 ```
